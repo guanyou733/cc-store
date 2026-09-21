@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse B - CC Store</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<nav>
+    <div class="brand">
+        <a href="index.html" target="_parent">CC Store</a>
+    </div>
+
+    <ul class="nav-left">
+        <li><a href="products.html" target="_parent">Products</a></li>
+        <li><a href="cart.html" target="_parent">Cart</a></li>
+    </ul>
+
+    <input type="text" class="search-bar" placeholder="Search"
+           onkeydown="if(event.key==='Enter') searchProduct()">
+
+    <div class="menu-container">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="sign-in.html" target="_parent">Sign In</a>
+            <a href="create-account.html" target="_parent">Create Account</a>
+            <a href="about.html" target="_parent">About Us</a>
+            <a href="contact.html" target="_parent">Contact Us</a>
+            <a href="help-center.html" target="_parent">Help Center</a>
+        </div>
+    </div>
+</nav>
+
+<section class="product-page">
+    <img src="images/Mouse B.jpg">
+
+    <div class="product-info">
+        <h2>Mouse B</h2>
+        <p>RGB Gaming mouse</p>
+        <p>Price: RM119.00</p>
+
+        <div class="qty-row">
+            <button onclick="changeQty(-1)">-</button>
+            <span id="qty">1</span>
+            <button onclick="changeQty(1)">+</button>
+        </div>
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</section>
+
+<a class="page-back-btn" href="products.html">back</a>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
