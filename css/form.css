@@ -22,6 +22,17 @@
     font-weight: 600;
 }
 
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
 .form-box button {
     margin-top: 20px;
     width: 100%;
@@ -29,10 +40,23 @@
     background: #00aaff;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #0088cc;
+}
+
+.form-box a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #6a00ff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 form input,
@@ -48,7 +72,7 @@ form textarea {
 
 form textarea {
     resize: vertical;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 form label {
@@ -63,16 +87,4 @@ form input[type="radio"] {
     margin: 0;
 }
 
-.form-box button:hover {
-    background: #0088cc;
-}
-
-.form-box a {
-    display: block;
-    margin-top: 15px;
-    text-align: center;
-    color: #6a00ff;
-    text-decoration: none;
-    font-weight: 600;
-}
 
